@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WetterApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="app-main">
+        <div class="container">
+            <h1 class="text-center">Wetterabfrage</h1>
+            <div class="form-group">
+                <label for="city-input">Stadt eingeben</label></br></br>
+                <input type="text" class="form-control" id="city-input" placeholder="Stadt eingeben">
+            </div></br>
+            <button class="btn btn-primary btn-lg" onclick="fetchWeather()">Wetter abrufen</button>
+            <div id="weather-output" class="alert alert-info mt-3" style="display: none;"></div>
+        </div>
+            <div class="weather-status">
+                <div class="temp" id="temp"></div>
+                <div class="min-max" id="min-max"></div>
+                <div class="weather" id="weather"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
