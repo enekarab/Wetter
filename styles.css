@@ -1,6 +1,6 @@
 body {
     display: grid;
-    place-items: center; /* Hem dikey hem yatayda merkezleme */
+    place-items: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
